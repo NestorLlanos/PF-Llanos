@@ -1,0 +1,221 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    }
+* {
+  outline: none !important;
+}
+  
+  /*estilos generales*/
+  @font-face {
+    font-family: "Lora";
+    src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
+  }
+  a{
+    text-decoration: none;
+    color:black; 
+  }
+   i{
+    font-size:xx-large;
+  }
+  .ifoo{
+    font-size:large;
+  }
+
+  
+.navbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+}
+.navbar ul{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 0px 50px 0px 0px;
+}
+
+.navbar li{
+	width: 200px;
+	height: 40px;
+	box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.07);
+	color: #232323;
+    font-family: "fantasy";
+	font-size: 18px;
+    align-items: center;
+    text-align:center;
+   
+}
+
+.logo {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    border-radius: 48px;
+    margin: 5px 25px 5px 5px;
+}
+.redes{
+    width: 30px;
+    height: 30px;
+  }
+   
+  .navbar a:hover {
+  font: bold;
+    font-size:smaller;
+    color: rgb(38, 68, 68) 
+  }
+  a:hover {
+      color: rgb(38, 68, 68) 
+    }
+  .footer-container li a:hover{
+    font-size:smaller;
+    color: rgb(233, 238, 238) 
+  }
+
+  .carousel-item img.custom{
+    
+    height: 500px;
+    object-fit: cover;
+
+  }
+  .sectioncard{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+  }
+  .sectioncard img.custom{
+    object-fit: cover;
+    height: 20rem;
+    border-color: #e3e5ec;
+  }
+
+  .card{
+   margin: 5px; 
+   background-color:#e3e5ec;
+   
+   
+  }
+   
+   .btn:hover{
+   background-color: #557686;
+   border-color: #557686;
+   }
+
+  .btn{
+background-color:#555;
+border-color: #555;
+
+  }
+
+  h1{
+    display: inline;
+    padding: 10px;
+    margin-inline: 10px;
+    color:rgb(11, 7, 17)   
+  }
+  
+
+  .bordesRedondeados{
+    border-radius: 10px;
+  }
+  .centrado{
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+  
+  }
+  .textleft{
+    text-align:left;
+  }
+  .resaltado{
+    background-color: rgb(233, 230, 77);
+  }
+ .h2{
+  display: flex;
+ }
+
+  body {
+    font-family: "amsterdam-three-slant";
+    src: url(./fonts/amsterdam-three-slant.ttf);
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #070707;
+    
+    
+  }
+
+ .container{
+  padding: 10px; 
+  
+ }
+
+.section2{
+  display: flex;
+ /*background-image: url('../Media/minimalista2.webp');*/
+  object-fit: cover;
+  border-style: groove;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  
+  font-size: large;
+  /*opacity: 0.5;*/
+ }
+
+
+.title-destacado{
+    padding: 10px ;
+    width: 103%;
+    height: 50px;
+    text-align: center;
+    font-size:x-large;
+    border-radius: 10px;
+ }
+
+.btn1{
+  margin-top: 10px;
+}
+
+.footer-container {
+    
+    background-color:#ced0dc;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+ }
+
+.footer-top{
+background-color:#ced0dc;
+}
+.containercredits{
+  display: flex;
+  background-color: #557686;
+  padding: 1%;
+  
+  
+}
+
+
+.footredes{
+  margin: 0px 130px 0px 130px;
+ 
+ }
+
+
+
+@media (max-width: 800px){
+
+  .sectioncard{
+    display: flex;
+    flex-direction: column;    
+  }
+  }
+  
+
+  
