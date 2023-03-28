@@ -56,7 +56,7 @@ body header .navbar {
   background: linear-gradient(90deg, rgba(215, 214, 228, 0.5550595238) 9%, rgba(75, 75, 108, 0.4990371148) 35%, rgba(108, 196, 214, 0.8351715686) 99%);
 }
 body header .navbar ul {
-  width: 70%;
+  width: 68%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,8 +65,7 @@ body header .navbar ul {
 body header .navbar ul li {
   width: 200px;
   height: 40px;
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.07);
-  color: #232323;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.07);
   font-family: "fantasy";
   font-size: 18px;
   align-items: center;
@@ -78,11 +77,12 @@ body header .navbar ul li a {
 }
 body header .navbar ul li a:hover {
   font: bold;
-  font-size: smaller;
-  color: rgb(38, 68, 68);
+  font-size: medium;
+  color: rgb(235, 241, 241);
 }
 body header .navbar i {
   font-size: xx-large;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.07);
 }
 body .container-fluid {
   padding: 10px;
