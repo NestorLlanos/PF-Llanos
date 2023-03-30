@@ -67,22 +67,21 @@ body {
         } 
         .navbar {
             display: flex;
-            text-align: center;
-            align-items: center;
-            padding: 5px;
+            height: 90px;
             background: linear-gradient(90deg, rgba(215,214,228,0.5550595238095238) 9%, rgba(75,75,108,0.4990371148459384) 35%, rgba(108,196,214,0.835171568627451) 99%);
             ul{
-                width: 68%;
+                width: 80%;
                 display: flex;
-                align-items: center;
-                justify-content:center;
-                margin: 0px 50px 0px 0px;
+                align-items: left;
+                justify-content:left;
+                padding: 0px 30px 0px 80px;
+                margin: 0px 10px 0px 0px;
                 li{
                     width: 200px;
                     height: 40px;
-                    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.07);
+                    box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.07);
 
-                    font-family: "fantasy";
+
                     font-size: 18px;
                     align-items: center;
                     text-align:center;
@@ -102,7 +101,8 @@ body {
             i{
                 font-size:xx-large;
                 box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.07);
-              }
+            }
+
         }
     }
 

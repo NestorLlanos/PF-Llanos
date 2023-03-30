@@ -50,23 +50,21 @@ body header .carousel-item img.custom {
 }
 body header .navbar {
   display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 5px;
+  height: 90px;
   background: linear-gradient(90deg, rgba(215, 214, 228, 0.5550595238) 9%, rgba(75, 75, 108, 0.4990371148) 35%, rgba(108, 196, 214, 0.8351715686) 99%);
 }
 body header .navbar ul {
-  width: 68%;
+  width: 80%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px 50px 0px 0px;
+  align-items: left;
+  justify-content: left;
+  padding: 0px 30px 0px 80px;
+  margin: 0px 10px 0px 0px;
 }
 body header .navbar ul li {
   width: 200px;
   height: 40px;
-  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.07);
-  font-family: "fantasy";
+  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.07);
   font-size: 18px;
   align-items: center;
   text-align: center;
