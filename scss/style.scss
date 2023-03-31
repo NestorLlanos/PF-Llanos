@@ -143,7 +143,27 @@ body {
             
             font-size: large;
             /*opacity: 0.5;*/
-           }
+        }
+        .sectionbelen{
+            display: flex;
+            text-align:left;
+            padding: 20px;
+            margin: 10px;
+            .cardbelen{
+                padding: 20px;
+                width: 400px;
+                font-family: "Lora";
+                    src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
+                    font-size: 16px;
+            }
+            
+            .imgbel{
+                object-fit: cover;
+                border-radius: 50px;
+                width: 100%;
+                height: 500px;
+            }
+        }
     
     }
 
