@@ -171,19 +171,28 @@ body .sectionbelen {
   text-align: left;
   padding: 20px;
   margin: 10px;
+  margin: 50px;
 }
 body .sectionbelen .cardbelen {
   padding: 20px;
-  width: 400px;
+  width: 320px;
+  height: 480px;
+  background-color: #BDCDD6;
+  border-radius: 10px;
+  margin: 30px;
   font-family: "Lora";
   src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
   font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 30px 0;
+  border-radius: 10px;
 }
 body .sectionbelen .imgbel {
   object-fit: cover;
   border-radius: 50px;
-  width: 100%;
-  height: 500px;
+  width: 420px;
+  height: 480px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 30px 0;
+  border-radius: 10px;
 }
 body .cardproductos {
   display: flex;
