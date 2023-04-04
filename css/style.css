@@ -22,12 +22,12 @@ a {
   src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
 }
 .btn {
-  background-color: #555;
-  border-color: #555;
-}
-.btn:hover {
   background-color: #557686;
   border-color: #557686;
+}
+.btn:hover {
+  background-color: hsl(196, 38%, 69%);
+  border-color: hsl(196, 38%, 69%);
 }
 
 body {
@@ -36,52 +36,84 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #070707;
+  background-color: #EEE9DA;
+  align-content: center;
 }
 body header .logo {
   display: flex;
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   border-radius: 48px;
   margin: 5px 25px 5px 5px;
 }
 body header .carousel-item img.custom {
-  height: 500px;
+  height: 400px;
   object-fit: cover;
 }
 body header .navbar {
-  display: flex;
-  background: linear-gradient(90deg, rgba(215, 214, 228, 0.5550595238) 9%, rgba(75, 75, 108, 0.4990371148) 35%, rgba(108, 196, 214, 0.8351715686) 99%);
+  background: #6096B4;
+  height: 80px;
 }
 body header .navbar ul {
-  width: 80%;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  padding: 0px 30px 0px 30px;
-  margin: 0px 10px 0px 0px;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-5%, -50%);
+  padding: 0px 10px 0px 10px;
 }
 body header .navbar ul li {
-  width: 200px;
-  height: 40px;
-  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.07);
   font-family: "Lora";
   src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
   font-size: 18px;
-  align-items: center;
-  text-align: center;
 }
 body header .navbar ul li a {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 20px 20px 0px 0px;
+  padding: 10px 20px;
   text-decoration: none;
-  color: black;
+  color: #262626;
+  font-weight: 600;
+  transition: 0.5s;
+  z-index: 1;
+}
+body header .navbar ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #262626;
+  border-bottom: 2px solid #262626;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.3s;
+}
+body header .navbar ul li a:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
 }
 body header .navbar ul li a:hover {
-  font: bold;
-  font-size: medium;
-  color: rgb(235, 241, 241);
+  color: #fff;
 }
-body header .navbar i {
-  font-size: xx-large;
-  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.07);
+body header .navbar ul li a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+body header .navbar ul li a:hover:after {
+  transform: scaleY(1);
+  opacity: 1;
 }
 body .container-fluid {
   padding: 10px;
@@ -102,78 +134,120 @@ body .container-fluid .sectioncard {
 }
 body .container-fluid .sectioncard .card {
   margin: 5px;
-  background-color: #e3e5ec;
+  background-color: #BDCDD6;
+  transform: perspective(800px);
+  transform-style: preserve-3d;
+  cursor: pointer;
 }
-body .container-fluid .sectioncard .card img.custom {
+body .container-fluid .sectioncard .card:hover {
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #080808 0 0 0 2px, inset white 0 0 0 6px;
+}
+body .container-fluid .sectioncard img.custom {
   object-fit: cover;
   height: 20rem;
   border-color: #e3e5ec;
 }
-body .container-fluid .section2 {
+body .section2 {
   display: flex;
-  background: linear-gradient(90deg, rgba(215, 214, 228, 0.5550595238) 9%, rgba(75, 75, 108, 0.4990371148) 35%, rgba(108, 196, 214, 0.8351715686) 99%);
-  object-fit: cover;
-  border-style: groove;
-  border-radius: 10px;
-  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   margin: 10px;
   font-size: large;
   /*opacity: 0.5;*/
 }
-body .container-fluid .sectionbelen {
+body .section2 .pedidos {
+  background: #BDCDD6;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.07);
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0;
+  border-radius: 15px;
+}
+body .sectionbelen {
   display: flex;
   text-align: left;
   padding: 20px;
   margin: 10px;
 }
-body .container-fluid .sectionbelen .cardbelen {
+body .sectionbelen .cardbelen {
   padding: 20px;
   width: 400px;
   font-family: "Lora";
   src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
   font-size: 16px;
 }
-body .container-fluid .sectionbelen .imgbel {
+body .sectionbelen .imgbel {
   object-fit: cover;
   border-radius: 50px;
   width: 100%;
   height: 500px;
 }
-body .footer-top {
-  background-color: #ced0dc;
+body .cardproductos {
+  display: flex;
+  background: #BDCDD6;
+  margin: 40px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 30px 0;
+  border-radius: 10px;
 }
-body .footer-top a:hover {
+body .contact {
+  padding: 20px;
+}
+body .contact .container {
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 30px 0;
+  border-radius: 10px;
+}
+body .contact .container .row {
+  background-color: #BDCDD6;
+  border-radius: 10px;
+}
+
+.footer-top {
+  background-color: #6096B4;
+}
+.footer-top a:hover {
   font: bold;
   font-size: smaller;
-  color: rgb(38, 68, 68);
+  color: rgb(249, 252, 252);
 }
-body .footer-top .container {
+.footer-top .container {
   padding: 10px;
 }
-body .footer-top .containercredits {
-  display: flex;
-  background-color: #557686;
-  padding: 1%;
-}
-body .footer-top .footer-links i {
+.footer-top .footer-links i {
   font-size: xx-large;
 }
-body .footer-top .footer-links .ifoo {
+.footer-top .footer-links .ifoo {
   font-size: large;
 }
-body .containercredits {
+
+.credits {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   display: flex;
   background-color: #557686;
-  padding: 1%;
-}
-body .containercredits .copyright {
-  padding-left: 100px;
+  padding-top: 20px;
 }
 
 @media (max-width: 800px) {
+  .navbar ul {
+    background-color: aliceblue;
+    top: 50%;
+    left: 5px;
+    width: 188px;
+  }
+  .navbar ul a {
+    font-size: small;
+  }
   .sectioncard {
     display: flex;
     flex-direction: column;
+  }
+  .footer-top {
+    text-align: center;
   }
 }
 

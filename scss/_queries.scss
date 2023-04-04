@@ -1,7 +1,28 @@
 @media (max-width: 800px){
+   
+    .navbar {
+     
+      
 
+      ul{
+          background-color:aliceblue;
+          top: 50%;  
+          left: 5px;       
+               
+          width:188px;
+          a{
+            font-size:small;
+          }                   
+                  
+      }
+    } 
     .sectioncard{
       display: flex;
       flex-direction: column;    
     }
+    .footer-top{
+      
+      text-align: center;
+    }
+
 }

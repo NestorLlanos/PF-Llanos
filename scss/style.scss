@@ -1,9 +1,12 @@
 /*Variables*/
 $fontSizeBig: 70px;
-$bg1: #82AAE3;
-$bg2: #91D8E4;
-$bg3: #BFEAF5;
-$bg4: #EAFDFC;
+$bg1: #6096B4;
+$bg2: hsl(196, 38%, 69%);
+$bg3: #BDCDD6;
+$bg4: #EEE9DA;
+$bg5: #557686;
+$hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
+$returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 /*fonts sizes*/
 $big: 5.5 rem;
 $medium: 2.5 rem;
@@ -17,6 +20,8 @@ $small: 0.88 rem;
     padding: 0px;
     box-sizing: border-box;
     list-style: none;
+    
+    
 }
 * {
   outline: none !important;
@@ -34,11 +39,11 @@ a{
     src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
    }
    .btn{
-        background-color:#555;
-        border-color: #555;
+        background-color:$bg5;
+        border-color:$bg5;
         &:hover{
-        background-color: #557686;
-        border-color: #557686;
+        background-color:$bg2;
+        border-color: $bg2;
         }
     }
 
@@ -48,67 +53,110 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #070707;
+    background-color: $bg4;
+    align-content: center;
     header{
+        
         .logo {
             display: flex;
-            width: 90px;
-            height: 90px;
+            width: 110px;
+            height: 110px;
             border-radius: 48px;
             margin: 5px 25px 5px 5px;
+            
         }
 
         .carousel-item{
             img.custom{
     
-                height: 500px;
+                height: 400px;
                 object-fit: cover;
             
             }
         } 
         .navbar {
-            display: flex;
+            
+            background:$bg1;
+            height: 80px;
+            
 
-            background: linear-gradient(90deg, rgba(215,214,228,0.5550595238095238) 9%, rgba(75,75,108,0.4990371148459384) 35%, rgba(108,196,214,0.835171568627451) 99%);
             ul{
-                width: 80%;
-                display: flex;
-                align-items: left;
-                justify-content:left;
-                padding: 0px 30px 0px 30px;
-                margin: 0px 10px 0px 0px;
+                position:absolute;
+                
+                top: 50%;
+                left: 55%;
+                transform: translate(-5%, -50%);
+                padding: 0px 10px 0px 10px;
+                
+                
                 li{
-                    width: 200px;
-                    height: 40px;
-                    box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.07);
+                    
                     font-family: "Lora";
                     src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
                     font-size: 18px;
-                    align-items: center;
-                    text-align:center;
+                    
                     
                     a{
+                        position: relative;
+                        display: inline-block;
+                        text-transform: uppercase;
+                        margin: 20px 20px 0px 0px;
+                        padding: 10px 20px;
                         text-decoration: none;
-                        color:black; 
+                        color: #262626;
+      
+                        font-weight: 600;
+                        transition: .5s;
+                        z-index: 1; 
+                        &:before {
+                         content: '';
+                         position: absolute;
+                         top: 0;
+                         left: 0;
+                         width: 100%;
+                         height: 100%;
+                         border-top: 2px solid #262626;
+                         border-bottom: 2px solid #262626;
+                         transform: scaleY(2);
+                         opacity: 0;
+                         transition: .3s;
+                        }
+                        &:after {
+                         content: '';
+                         position: absolute;
+                         top: 2px;
+                         left: 0;
+                         width: 100%;
+                         height: 100%;
+                         background-color: #262626;
+                         transform: scale(0);
+                         opacity: 0;
+                         transition: .3s;
+                         z-index: -1;
+                        }
                         &:hover {
-                            font: bold;
-                              font-size:medium;
-                              color: rgb(235, 241, 241) 
+                          color: #fff;
+                        &:before {
+                         transform: scaleY(1);
+                         opacity: 1;
+                        }
+                        &:after {
+                        transform: scaleY(1);
+                        opacity: 1;
+                        }
                         }
                       
                     }
                 }
             }
-            i{
-                font-size:xx-large;
-                box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.07);
-            }
-
+            
         }
     }
 
     
     .container-fluid{
-        padding: 10px; 
+        padding: 10px;
+        
         .centrado{
             text-align: center;
             padding: 40px 0px 40px 0px;
@@ -116,15 +164,33 @@ body {
                 display: inline;
                 padding: 10px;
                 margin-inline: 10px;
-                color:rgb(11, 7, 17)   
-            }
-        } 
+                color:rgb(11, 7, 17);  
+                
+            } 
+        }
+         
         .sectioncard{
             display: flex;
             flex-wrap: wrap;
+            
             .card{
                 margin: 5px; 
-                background-color:#e3e5ec;
+                background-color:$bg3;
+                transform: perspective(800px);
+                transform-style: preserve-3d;
+                cursor: pointer;
+                &:hover {
+                        transition:
+                        0.6s $hoverEasing,
+                        box-shadow 2s $hoverEasing;
+                        box-shadow:
+                        rgba(white, 0.2) 0 0 40px 5px,
+                        rgba(white, 1) 0 0 0 1px,
+                        rgba(black, 0.66) 0 30px 60px 0,
+                        inset #080808 0 0 0 2px,
+                        inset white 0 0 0 6px;
+                    }
+                  }
                 img.custom{
                     object-fit: cover;
                     height: 20rem;
@@ -134,15 +200,27 @@ body {
         }
         .section2{
             display: flex;
-            background: linear-gradient(90deg, rgba(215,214,228,0.5550595238095238) 9%, rgba(75,75,108,0.4990371148459384) 35%, rgba(108,196,214,0.835171568627451) 99%);
-            object-fit: cover;
-            border-style: groove;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 10px;
-            
-            font-size: large;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 10px;     
+            font-size: large;                       
             /*opacity: 0.5;*/
+            
+            .pedidos{
+                background: $bg3;
+                object-fit: cover;                
+                border-radius: 10px;
+                padding: 25px;
+                box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.07);                
+                box-shadow:
+                    rgba(white, 0.2) 0 0 40px 5px,
+                    rgba(white, 1) 0 0 0 1px,
+                    rgba(black, 0.66) 0 30px 60px 0;
+                    
+                    border-radius: 15px;                
+            
+            }
         }
         .sectionbelen{
             display: flex;
@@ -155,7 +233,7 @@ body {
                 font-family: "Lora";
                     src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
                     font-size: 16px;
-            }
+                } 
             
             .imgbel{
                 object-fit: cover;
@@ -164,25 +242,45 @@ body {
                 height: 500px;
             }
         }
+        .cardproductos{
+            display: flex;
+            background: $bg3;
+            
+            margin : 40px;
+            padding: 30px;
+            box-shadow:            
+            rgba(black, 0.66) 0 30px 30px 0;            
+            border-radius: 10px;
+        }
     
+
+        .contact{
+            padding: 20px;
+            .container{
+                box-shadow:            
+                    rgba(black, 0.66) 0 30px 30px 0;            
+                    border-radius: 10px;
+                .row{
+                    background-color: $bg3;
+                    border-radius: 10px;                    
+                }
+            }
+        
+        }
     }
 
     .footer-top{
-        background-color:#ced0dc;
+        background-color:$bg1;
         a:hover {
             font: bold;
               font-size:smaller;
-              color: rgb(38, 68, 68) 
+              color: rgb(249, 252, 252); 
             }
         .container{
             padding: 10px; 
             
         }
-        .containercredits{
-            display: flex;
-            background-color: #557686;
-            padding: 1%;  
-        }
+        
         .footer-links{
             i{
                 font-size:xx-large;
@@ -193,17 +291,24 @@ body {
         }
     }
 
-    .containercredits{
+    .credits{
         display: flex;
-        background-color: #557686;
-        padding: 1%;  
-        .copyright{
-            padding-left: 100px;
-        }
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        background-color: $bg5;
+        padding-top: 20px; 
+
     }
 
-}
+
     
+
+
+
+  
+  
+
 
 
 
