@@ -255,6 +255,9 @@ body .contact .container .row {
     display: flex;
     flex-direction: column;
   }
+  .info iframe {
+    height: 250px;
+  }
   .footer-top {
     text-align: center;
   }
