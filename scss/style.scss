@@ -59,10 +59,10 @@ body {
         
         .logo {
             display: flex;
-            width: 110px;
-            height: 110px;
+            width: 80px;
+            height: 80px;
             border-radius: 48px;
-            margin: 5px 25px 5px 5px;
+            margin: 5px 5px 5px 5px;
             
         }
 
@@ -77,16 +77,19 @@ body {
         .navbar {
             
             background:$bg1;
-            height: 80px;
+            
             
 
             ul{
-                position:absolute;
+                /*position:absolute;
                 
                 top: 50%;
                 left: 55%;
                 transform: translate(-5%, -50%);
-                padding: 0px 10px 0px 10px;
+                padding: 0px 10px 0px 10px;*/
+                display: flex;
+                align-items:flex-start;
+                
                 
                 
                 li{
@@ -171,7 +174,12 @@ body {
          
         .sectioncard{
             display: flex;
-            flex-wrap: wrap;
+            margin-left: 50px;  
+            text-align: center; 
+            
+            
+            
+            
             
             .card{
                 margin: 5px; 
@@ -193,8 +201,8 @@ body {
                   }
                 img.custom{
                     object-fit: cover;
-                    height: 20rem;
-                    border-color: #e3e5ec;
+                    height: 28rem;
+                    border-color: $bg2;
                 }
             }
         }

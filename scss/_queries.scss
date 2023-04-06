@@ -1,6 +1,6 @@
 @media (max-width: 800px){
    
-    .navbar {
+    /*.navbar {
      
       
 
@@ -15,10 +15,13 @@
           }                   
                   
       }
-    } 
+    } */
     .sectioncard{
       display: flex;
-      flex-direction: column;    
+      flex-direction: column;
+      align-content: center;
+      
+       
     }
     
     .footer-top{
