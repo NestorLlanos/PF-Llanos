@@ -9,7 +9,7 @@ $hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
 $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 /*fonts sizes*/
 $big: 5.5 rem;
-$medium: 2.5 rem;
+$medium: 3.5 rem;
 $normal: 1 rem;
 $small: 0.88 rem;
 
@@ -160,6 +160,7 @@ body {
     .container-fluid{
         padding: 10px;
         
+        
         .centrado{
             text-align: center;
             padding: 40px 0px 40px 0px;
@@ -231,39 +232,42 @@ body {
             }
         }
         .sectionbelen{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 50px;
+            display: flex;            
             text-align:left;
-            padding: 50px;
-            margin: 20px 10px 20px 10px;
-            
-            
+            padding: 10px;
             .cardbelen{
-                padding: 10px;
-                width: 250px;
-                height: 480px;
+                
+                padding: 10px;               
                 background-color: $bg3;
-                border-radius: 10px;
-                margin: 5px;
+                border-radius: 20px;
+                margin: 10px;
                 font-family: "Lora";
                 src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
                 font-size: 16px;
                 box-shadow:            
                     rgba(black, 0.66) 0 30px 30px 0;            
                     border-radius: 10px;    
-                } 
+                .centrado{
+                    text-align: center;
+                    padding: 40px 0px 40px 0px;
+                   
+                }
+                .imgbel{
+                    width: 290px;
+                    height: 400px;
+                    object-fit: cover;
+                    border-radius: 100px;                      
+                    box-shadow:            
+                    rgba(black, 0.66) 0 30px 30px 0;                              
+                }
+                .parrafobel{
+                    padding-top:50px ;
+                    width: 300px;
+                    align-content: center;
+                    font-size: $medium;
+                }
+            }             
             
-            .imgbel{
-                object-fit: cover;
-                border-radius: 30px;
-                width: 420px;
-                height: 480px;
-                box-shadow:            
-                    rgba(black, 0.66) 0 30px 30px 0;            
-                    border-radius: 10px;
-            }
         }
         .cardproductos{
             display: flex;

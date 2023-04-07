@@ -171,33 +171,36 @@ body .section2 .pedidos {
 }
 body .sectionbelen {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
   text-align: left;
-  padding: 50px;
-  margin: 20px 10px 20px 10px;
+  padding: 10px;
 }
 body .sectionbelen .cardbelen {
   padding: 10px;
-  width: 250px;
-  height: 480px;
   background-color: #BDCDD6;
-  border-radius: 10px;
-  margin: 5px;
+  border-radius: 20px;
+  margin: 10px;
   font-family: "Lora";
   src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
   font-size: 16px;
   box-shadow: rgba(0, 0, 0, 0.66) 0 30px 30px 0;
   border-radius: 10px;
 }
-body .sectionbelen .imgbel {
+body .sectionbelen .cardbelen .centrado {
+  text-align: center;
+  padding: 40px 0px 40px 0px;
+}
+body .sectionbelen .cardbelen .imgbel {
+  width: 290px;
+  height: 400px;
   object-fit: cover;
-  border-radius: 30px;
-  width: 420px;
-  height: 480px;
+  border-radius: 100px;
   box-shadow: rgba(0, 0, 0, 0.66) 0 30px 30px 0;
-  border-radius: 10px;
+}
+body .sectionbelen .cardbelen .parrafobel {
+  padding-top: 50px;
+  width: 300px;
+  align-content: center;
+  font-size: 3.5 rem;
 }
 body .cardproductos {
   display: flex;
