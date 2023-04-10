@@ -58,11 +58,9 @@ body {
     header{
         
         .logo {
-            display: flex;
-            width: 80px;
-            height: 80px;
-            border-radius: 48px;
-            margin: 5px 5px 5px 5px;
+            
+            width: 70px;
+            height: 70px;      
             
         }
 
@@ -74,19 +72,17 @@ body {
             
             }
         } 
-        .navbar {
-            
+        .navbar {            
             background:$bg1;
-            
+            .logo {
+                display: flex;
+                width: 70px;
+                height: 70px;      
+                
+            }
             
 
             ul{
-                /*position:absolute;
-                
-                top: 50%;
-                left: 55%;
-                transform: translate(-5%, -50%);
-                padding: 0px 10px 0px 10px;*/
                 display: flex;
                 align-items:flex-start;
                 
@@ -234,13 +230,13 @@ body {
         .sectionbelen{
             display: flex;            
             text-align:left;
-            padding: 10px;
+            margin: 10px;            
+            
             .cardbelen{
                 
                 padding: 10px;               
                 background-color: $bg3;
-                border-radius: 20px;
-                margin: 10px;
+                border-radius: 20px;                
                 font-family: "Lora";
                 src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
                 font-size: 16px;
@@ -249,22 +245,38 @@ body {
                     border-radius: 10px;    
                 .centrado{
                     text-align: center;
-                    padding: 40px 0px 40px 0px;
+                    padding: 40px 0px 20px 0px;
                    
                 }
                 .imgbel{
-                    width: 290px;
-                    height: 400px;
+                    width: 320px;
+                    height: 550px;
                     object-fit: cover;
-                    border-radius: 100px;                      
+                    border-radius: 10px;                      
                     box-shadow:            
-                    rgba(black, 0.66) 0 30px 30px 0;                              
+                    rgba(black, 0.56) 0 60px 30px 0;
+                    transform: perspective(800px);
+                    transform-style: preserve-3d;
+                    
+                    &:hover {
+                        transition:
+                        0.6s $hoverEasing,
+                        box-shadow 2s $hoverEasing;
+                        box-shadow:
+                        rgba(white, 0.2) 0 0 40px 5px,
+                        rgba(white, 1) 0 0 0 1px,
+                        rgba(black, 0.66) 0 30px 60px 0,
+                        inset #080808 0 0 0 2px,
+                        inset white 0 0 0 6px;
+                    }                              
                 }
                 .parrafobel{
-                    padding-top:50px ;
-                    width: 300px;
-                    align-content: center;
+                    padding-top:90px ;
+                    width: 320px;
+                    align-items: center;
                     font-size: $medium;
+                    
+                    
                 }
             }             
             
@@ -297,18 +309,17 @@ body {
     }
 
     .footer-top{
+        
         background-color:$bg1;
         a:hover {
             font: bold;
               font-size:smaller;
               color: rgb(249, 252, 252); 
             }
-        .container{
-            padding: 10px; 
-            
-        }
+        
         
         .footer-links{
+            
             i{
                 font-size:xx-large;
             }
