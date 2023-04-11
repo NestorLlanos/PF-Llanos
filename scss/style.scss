@@ -74,10 +74,11 @@ body {
         } 
         .navbar {            
             background:$bg1;
+            
             .logo {
                 display: flex;
-                width: 70px;
-                height: 70px;      
+                width: 60px;
+                height: 60px;      
                 
             }
             
@@ -153,9 +154,10 @@ body {
     }
 
     
-    .container-fluid{
-        padding: 10px;
+    .container{
         
+        padding: 5px;
+            
         
         .centrado{
             text-align: center;
@@ -171,12 +173,8 @@ body {
          
         .sectioncard{
             display: flex;
-            margin: 20px 40 10px 20px; 
-            text-align: center; 
-            
-            
-            
-            
+            margin: 20px 30px 10px 10px; 
+            text-align: center;  
             
             .card{
                 margin: 5px; 
@@ -229,7 +227,7 @@ body {
         }
         .sectionbelen{
             display: flex;            
-            text-align:left;
+            text-align:center;
             margin: 10px;            
             
             .cardbelen{
@@ -248,36 +246,35 @@ body {
                     padding: 40px 0px 20px 0px;
                    
                 }
-                .imgbel{
-                    width: 320px;
-                    height: 550px;
-                    object-fit: cover;
-                    border-radius: 10px;                      
+                img{
+                    padding: 3px;
+                    margin: 10px;
+                    width: 250px;
+                    height: 350px;
+                    object-fit:cover;
+                                       
                     box-shadow:            
-                    rgba(black, 0.56) 0 60px 30px 0;
-                    transform: perspective(800px);
+                    rgba(black, 0.36) 0 10px 10px 0;
+                    transform: perspective(600px);
                     transform-style: preserve-3d;
                     
                     &:hover {
+                        width: 310px;
+                        height: 410px;
                         transition:
                         0.6s $hoverEasing,
                         box-shadow 2s $hoverEasing;
                         box-shadow:
                         rgba(white, 0.2) 0 0 40px 5px,
                         rgba(white, 1) 0 0 0 1px,
-                        rgba(black, 0.66) 0 30px 60px 0,
-                        inset #080808 0 0 0 2px,
-                        inset white 0 0 0 6px;
+                        rgba(black, 0.66) 0 30px 60px 0;
+                        
+                        
                     }                              
                 }
-                .parrafobel{
-                    padding-top:90px ;
-                    width: 320px;
-                    align-items: center;
-                    font-size: $medium;
-                    
-                    
-                }
+                
+                
+                
             }             
             
         }

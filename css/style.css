@@ -52,8 +52,8 @@ body header .navbar {
 }
 body header .navbar .logo {
   display: flex;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 body header .navbar ul {
   display: flex;
@@ -113,36 +113,36 @@ body header .navbar ul li a:hover:after {
   transform: scaleY(1);
   opacity: 1;
 }
-body .container-fluid {
-  padding: 10px;
+body .container {
+  padding: 5px;
 }
-body .container-fluid .centrado {
+body .container .centrado {
   text-align: center;
   padding: 40px 0px 40px 0px;
 }
-body .container-fluid .centrado h1 {
+body .container .centrado h1 {
   display: inline;
   padding: 10px;
   margin-inline: 10px;
   color: rgb(11, 7, 17);
 }
-body .container-fluid .sectioncard {
+body .container .sectioncard {
   display: flex;
-  margin: 20px 40 10px 20px;
+  margin: 20px 30px 10px 10px;
   text-align: center;
 }
-body .container-fluid .sectioncard .card {
+body .container .sectioncard .card {
   margin: 5px;
   background-color: #BDCDD6;
   transform: perspective(800px);
   transform-style: preserve-3d;
   cursor: pointer;
 }
-body .container-fluid .sectioncard .card:hover {
+body .container .sectioncard .card:hover {
   transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
   box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #080808 0 0 0 2px, inset white 0 0 0 6px;
 }
-body .container-fluid .sectioncard img.custom {
+body .container .sectioncard img.custom {
   object-fit: cover;
   height: 28rem;
   border-color: hsl(196, 38%, 69%);
@@ -167,7 +167,7 @@ body .section2 .pedidos {
 }
 body .sectionbelen {
   display: flex;
-  text-align: left;
+  text-align: center;
   margin: 10px;
 }
 body .sectionbelen .cardbelen {
@@ -184,24 +184,21 @@ body .sectionbelen .cardbelen .centrado {
   text-align: center;
   padding: 40px 0px 20px 0px;
 }
-body .sectionbelen .cardbelen .imgbel {
-  width: 320px;
-  height: 550px;
+body .sectionbelen .cardbelen img {
+  padding: 3px;
+  margin: 10px;
+  width: 250px;
+  height: 350px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.56) 0 60px 30px 0;
-  transform: perspective(800px);
+  box-shadow: rgba(0, 0, 0, 0.36) 0 10px 10px 0;
+  transform: perspective(600px);
   transform-style: preserve-3d;
 }
-body .sectionbelen .cardbelen .imgbel:hover {
+body .sectionbelen .cardbelen img:hover {
+  width: 310px;
+  height: 410px;
   transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
-  box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #080808 0 0 0 2px, inset white 0 0 0 6px;
-}
-body .sectionbelen .cardbelen .parrafobel {
-  padding-top: 90px;
-  width: 320px;
-  align-items: center;
-  font-size: 3.5 rem;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0;
 }
 body .cardproductos {
   display: flex;
@@ -248,22 +245,6 @@ body .contact .container .row {
 }
 
 @media (max-width: 800px) {
-  /*.navbar {
-
-
-
-    ul{
-        background-color:aliceblue;
-        top: 50%;  
-        left: 5px;       
-
-        width:188px;
-        a{
-          font-size:small;
-        }                   
-
-    }
-  } */
   .sectioncard {
     display: flex;
     flex-direction: column;
