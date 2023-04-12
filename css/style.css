@@ -219,6 +219,9 @@ body .contact .container .row {
   background-color: #BDCDD6;
   border-radius: 10px;
 }
+body .imgprod {
+  height: 280px;
+}
 
 .footer-top {
   background-color: #6096B4;
