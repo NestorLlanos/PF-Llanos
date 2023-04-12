@@ -114,7 +114,7 @@ body header .navbar ul li a:hover:after {
   opacity: 1;
 }
 body .container {
-  padding: 5px;
+  padding: 15px;
 }
 body .container .centrado {
   text-align: center;
