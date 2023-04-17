@@ -1,5 +1,6 @@
 /*Variables*/
 /*fonts sizes*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 * {
   margin: 0px;
   padding: 0px;
@@ -51,7 +52,9 @@ body header .navbar {
   background: #6096B4;
 }
 body header .navbar .logo {
-  display: flex;
+  position: absolute;
+  right: 0.1rem;
+  top: 0.5rem;
   width: 60px;
   height: 60px;
 }
@@ -154,7 +157,6 @@ body .section2 {
   padding: 20px;
   margin: 10px;
   font-size: large;
-  /*opacity: 0.5;*/
 }
 body .section2 .pedidos {
   background: #BDCDD6;
@@ -218,6 +220,9 @@ body .contact .container {
 body .contact .container .row {
   background-color: #BDCDD6;
   border-radius: 10px;
+}
+body .contact .btn1 {
+  margin-bottom: 15px;
 }
 body .imgprod {
   height: 280px;

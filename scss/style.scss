@@ -48,6 +48,7 @@ a{
     }
 
 body {
+       
     font-family: "amsterdam-three-slant";
     src: url(./fonts/amsterdam-three-slant.ttf);
     font-size: 14px;
@@ -76,7 +77,10 @@ body {
             background:$bg1;
             
             .logo {
-                display: flex;
+                
+                position:absolute;
+                right: 0.1rem;
+                top: 0.5rem;                
                 width: 60px;
                 height: 60px;      
                 
@@ -208,7 +212,7 @@ body {
             padding: 20px;
             margin: 10px;     
             font-size: large;                       
-            /*opacity: 0.5;*/
+           
             
             .pedidos{
                 background: $bg3;
@@ -219,8 +223,7 @@ body {
                 box-shadow:
                     rgba(white, 0.2) 0 0 40px 5px,
                     rgba(white, 1) 0 0 0 1px,
-                    rgba(black, 0.66) 0 30px 60px 0;
-                    
+                    rgba(black, 0.66) 0 30px 60px 0;                    
                     border-radius: 15px;                
             
             }
@@ -278,6 +281,8 @@ body {
             }             
             
         }
+        
+        
         .cardproductos{
             display: flex;
             background: $bg3;
@@ -300,6 +305,9 @@ body {
                     background-color: $bg3;
                     border-radius: 10px;                    
                 }
+            }
+            .btn1{
+                margin-bottom: 15px;
             }
         
         }
@@ -351,3 +359,4 @@ body {
 
 
 @import "queries";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
