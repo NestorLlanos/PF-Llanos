@@ -309,6 +309,7 @@ body .contact .btn1 {
 }
 body .imgprod {
   height: 280px;
+  object-fit: cover;
 }
 
 .footer-top {
