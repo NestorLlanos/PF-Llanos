@@ -74,6 +74,11 @@ body {
             height: 70px;      
             
         }
+        .imgbanner{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
 
         .carousel-item{
             img.custom{
@@ -408,6 +413,13 @@ body {
         }
         .imgprod{
             height: 280px;   
+        }
+        .carousel-item{
+            .custom2{
+                object-fit: cover;
+                height: 500px;
+                border-radius: 10px;
+            }
         }
     }
 
