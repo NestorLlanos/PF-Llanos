@@ -314,6 +314,7 @@ body .contact .btn1 {
 }
 body .imgprod {
   height: 280px;
+  object-fit: cover;
 }
 body .carousel-item .custom2 {
   object-fit: cover;
