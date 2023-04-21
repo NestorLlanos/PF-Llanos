@@ -220,6 +220,9 @@ body .cardproductos {
   align-content: center;
   align-items: center;
 }
+body .cardproductos .btn1 {
+  margin-right: 20px;
+}
 body .cardproductos button {
   position: relative;
   display: inline-block;
