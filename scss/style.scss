@@ -44,7 +44,7 @@ a{
   /*estilos generales*/
   @font-face {
     font-family: "Lora";
-    src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
+    src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
    }
    .btn{
         background-color:$bg5;
@@ -111,7 +111,7 @@ body {
                 li{
                     
                     font-family: "Lora";
-                    src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
+                    src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
                     font-size: 18px;
                     
                     
@@ -395,6 +395,16 @@ body {
                 }
               }
               
+        }
+        .promo{
+           padding-bottom: 15px; 
+           
+            .promo1{
+                box-shadow:            
+            rgba(black, 0.60) 0 30px 30px 0;            
+            border-radius: 10px;
+
+            }
         }
     
 

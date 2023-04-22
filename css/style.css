@@ -23,7 +23,7 @@ a {
 /*estilos generales*/
 @font-face {
   font-family: "Lora";
-  src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
+  src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
 }
 .btn {
   background-color: #557686;
@@ -72,7 +72,7 @@ body header .navbar ul {
 }
 body header .navbar ul li {
   font-family: "Lora";
-  src: url(./fonts/Lora/Lora-VariableFont_wght.ttf);
+  src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
   font-size: 18px;
 }
 body header .navbar ul li a {
@@ -300,6 +300,13 @@ body .cardproductos button:hover .circle .icon.arrow {
 }
 body .cardproductos button:hover .button-text {
   color: #fff;
+}
+body .promo {
+  padding-bottom: 15px;
+}
+body .promo .promo1 {
+  box-shadow: rgba(0, 0, 0, 0.6) 0 30px 30px 0;
+  border-radius: 10px;
 }
 body .contact {
   padding: 20px;
