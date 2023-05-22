@@ -105,8 +105,7 @@ body {
             ul{
                 display: flex;
                 align-items:flex-start;
-                
-                
+                                
                 
                 li{
                     
@@ -193,7 +192,8 @@ body {
         .sectioncard{
             display: flex;
             margin: 20px 30px 10px 10px; 
-            text-align: center;  
+            text-align: center; 
+            align-items: center; 
             
             .card{
                 margin: 5px; 
@@ -208,8 +208,8 @@ body {
                         box-shadow:
                         rgba(white, 0.2) 0 0 40px 5px,
                         rgba(white, 1) 0 0 0 1px,
-                        rgba(black, 0.66) 0 30px 60px 0,
-                        inset #080808 0 0 0 2px,
+                        rgba(black, 0.46) 0 20px 40px 0,
+                        
                         inset white 0 0 0 6px;
                     }
                   }
